@@ -13,6 +13,10 @@ export default function MissionCard(props: MissionCardProps) {
         {props.subject}
       </p>
 
+      <p className="mt-2 text-lg">
+        {props.task}
+      </p>
+
       <p className="mt-2 text-gray-400">
         {props.deadline}
       </p>
