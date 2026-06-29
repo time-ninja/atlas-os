@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import MissionCard from "../components/missioncard";
+import Header from "../components/Header";
+
 
 const initialMissions = [
   {
@@ -39,17 +41,22 @@ export default function Home() {
     return mission;
   });
 
+  console.log(updatedMissions);
+
   setMissions(updatedMissions);
   }
 
   return (
+    
     <main className="min-h-screen flex flex-col items-center justify-center gap-6 bg-black">
+      <Header />
       {missions.map((mission) => (
         <MissionCard
           key={mission.subject}
           subject={mission.subject}
           task={mission.task}
           deadline={mission.deadline}
+          completed={mission.completed}
           onComplete={completeMission}
         />
       ))}
