@@ -3,6 +3,7 @@
 import { useState } from "react";
 import MissionCard from "../components/missioncard";
 import Header from "../components/Header";
+import ProgressCard from "../components/ProgressCard";
 
 
 const initialMissions = [
@@ -41,15 +42,28 @@ export default function Home() {
     return mission;
   });
 
+  
   console.log(updatedMissions);
 
   setMissions(updatedMissions);
   }
 
+
+  const completedCount = missions.filter(
+  (mission) => mission.completed).length;
+
+  const totalMissions = missions.length;
+
   return (
     
     <main className="min-h-screen flex flex-col items-center justify-center gap-6 bg-black">
       <Header />
+
+      <ProgressCard
+          completed={completedCount}
+          total={totalMissions}
+        />
+
       {missions.map((mission) => (
         <MissionCard
           key={mission.subject}
