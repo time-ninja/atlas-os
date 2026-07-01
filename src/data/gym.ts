@@ -1,0 +1,240 @@
+export const gymschedule = [
+  {
+  day: "Sunday",
+  split: "Push",
+  exercises: [
+    {
+      id: "inclined-machine-press",
+      name: "Inclined Machine Press",
+      sets: 3,
+      reps: "10-12",
+    },
+    {
+      id: "Machine-Shoulder-Press",
+      name: "Machine Shoulder Press",
+      sets: 3,
+      reps: "10-12",
+    },
+    {
+      id: "Cable-overhead-triceps-extension",
+      name: "Cable Overhead Triceps Extension",
+      sets: 3,
+      reps: "10-12",
+    },
+    {
+      id: "Cable-Lateral-Raise",
+      name: "Cable Lateral Raise",
+      sets: 3,
+      reps: "10-12",
+    },
+    {
+      id: "rope-pushdown",
+      name: "Rope Pushdown",
+      sets: 3,
+      reps: "10-12",
+    },
+  ],
+},
+{
+  day: "Monday",
+  split: "Pull",
+  exercises: [
+    {
+      id: "Archer-rope-pulls",
+      name: "Archer Rope Pulls",
+      sets: 3,
+      reps: "10-12",
+    },
+    {
+      id: "Lat-pull-down",
+      name: "Lat Pulldown",
+      sets: 3,
+      reps: "10-12",
+    },
+    {
+      id: "one-arm-cable-row",
+      name: "One-Arm Cable Row",
+      sets: 3,
+      reps: "10-12",
+    },
+    {
+      id: "Chest-supported-T-bar-row",
+      name: "Chest-Supported T-Bar Row",
+      sets: 3,
+      reps: "10-12",
+    },
+    {
+      id: "Machine-reverse-fly",
+      name: "Machine Reverse Fly",
+      sets: 3,
+      reps: "10-12",
+    },
+    {
+      id: "Back-extension",
+      name: "Back Extension",
+      sets: 3,
+      reps: "10-12",
+    },
+    {
+      id: "cable-bicep-curl",
+      name: "Cable Bicep Curl",
+      sets: 3,
+      reps: "10-12",
+    },
+  ],
+},
+{
+  day: "Tuesday",
+  split: "Legs",
+  exercises: [
+    {
+      id: "Machine-calf-raise",
+      name: "Machine Calf Raise",
+      sets: 3,
+      reps: "10-12",
+    },
+    {
+      id: "Hip-abduction",
+      name: "Hip Abduction",
+      sets: 2,
+      reps: "10-12",
+    },
+    {
+      id: "Hip-adduction",
+      name: "Hip Adduction",
+      sets: 2,
+      reps: "10-12",
+    },
+    {
+      id: "lying-leg-curl",
+      name: "Lying Leg Curl",
+      sets: 3,
+      reps: "10-12",
+    },
+    {
+      id: "leg-extension",
+      name: "Leg Extension",
+      sets: 3,
+      reps: "10-12",
+    },
+    {
+      id: "crunches",
+      name: "Crunches",
+      sets: 2,
+      reps: "15-20",
+    },
+    {
+      id: "dragon-flag",
+      name: "Dragon Flag",
+      sets: 2,
+      reps: "5-10",
+    },
+  ],
+},
+{
+  day: "Wednesday",
+  split: "Rest",
+  exercises: [],
+},
+{
+  day: "Thursday",
+  split: "Upper",
+  exercises: [
+     {
+      id: "Cable-Lateral-Raise",
+      name: "Cable Lateral Raise",
+      sets: 3,
+      reps: "10-12",
+    },
+    {
+      id: "rope-pushdown",
+      name: "Rope Pushdown",
+      sets: 3,
+      reps: "10-12",
+    },
+    {
+      id: "cable-bicep-curl",
+      name: "Cable Bicep Curl",
+      sets: 3,
+      reps: "10-12",
+    },
+    {
+      id: "Machine-Chest-fly",
+      name: "Machine Chest Fly",
+      sets: 3,
+      reps: "10-12",
+    },
+    {
+      id: "Dips",
+      name: "Dips",
+      sets: 2,
+      reps: "1-5",
+    },
+    {
+      id: "Arm-wrist-curl",
+      name: "Arm Wrist Curl",
+      sets: 3,
+      reps: "10-12",
+    },
+  ],
+},
+{
+  day: "Friday",
+  split: "Lower",
+  exercises: [
+    {
+      id: "Machine-calf-raise",
+      name: "Machine Calf Raise",
+      sets: 3,
+      reps: "10-12",
+    },
+    {
+      id: "Hip-abduction",
+      name: "Hip Abduction",
+      sets: 2,
+      reps: "10-12",
+    },
+    {
+      id: "Hip-adduction",
+      name: "Hip Adduction",
+      sets: 2,
+      reps: "10-12",
+    },
+    {
+      id: "lying-leg-curl",
+      name: "Lying Leg Curl",
+      sets: 3,
+      reps: "10-12",
+    },
+    {
+      id: "leg-extension",
+      name: "Leg Extension",
+      sets: 3,
+      reps: "10-12",
+    },
+    {
+      id: "Heel-touch",
+      name: "Heel Touch",
+      sets: 2,
+      reps: "15-20",
+    },
+    {
+      id: "dragon-flag",
+      name: "Dragon Flag",
+      sets: 2,
+      reps: "5-10",
+    },
+    {
+      id: "captain-chair-leg-raise",
+      name: "Captain Chair Leg Raise",
+      sets: 3,
+      reps: "10-12",
+    },
+  ],
+},
+{
+  day: "Saturday",
+  split: "Rest",
+  exercises: [],
+},
+];

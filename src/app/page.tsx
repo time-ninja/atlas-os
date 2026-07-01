@@ -4,9 +4,10 @@ import { useState } from "react";
 import MissionCard from "../components/missioncard";
 import Header from "../components/Header";
 import ProgressCard from "../components/ProgressCard";
-// import { timetable } from "../data/timetable";
 import NextClassCard from "../components/NextClassCard";
 import { getNextClass } from "../utils/getNextClass";
+import { getTodayWorkout } from "../utils/getTodayWorkout";
+import GymCard from "@/components/GymCard";
 
 const initialMissions = [
   {
@@ -56,11 +57,23 @@ export default function Home() {
 
   const totalMissions = missions.length;
   const nextClass = getNextClass();
+  const todayWorkout = getTodayWorkout();
+  
 
   return (
     
     <main className="min-h-screen flex flex-col items-center justify-center gap-6 bg-black">
       <Header />
+      {todayWorkout ? (
+  <GymCard
+    split={todayWorkout.split}
+    exerciseCount={todayWorkout.exercises.length}
+  />
+) : (
+  <div className="w-80 rounded-2xl bg-zinc-900 p-6 text-white">
+    <h2 className="text-2xl font-bold">(rest day)</h2>
+  </div>
+)}
       {nextClass ? (
       <NextClassCard
          subject={nextClass.subject}
