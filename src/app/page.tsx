@@ -8,6 +8,8 @@ import NextClassCard from "../components/NextClassCard";
 import { getNextClass } from "../utils/getNextClass";
 import { getTodayWorkout } from "../utils/getTodayWorkout";
 import GymCard from "@/components/GymCard";
+import sidebar from "@/components/sidebar";
+import Sidebar from "@/components/sidebar";
 
 const initialMissions = [
   {
@@ -61,9 +63,14 @@ export default function Home() {
   
 
   return (
-    
-    <main className="min-h-screen flex flex-col items-center justify-center gap-6 bg-black">
+
+<div className="flex min-h-screen">  
+    <Sidebar/>
+    <main className="flex-1 px-8">
       <Header />
+
+<div className="grid grid-cols-2 gap-6 mt-8">
+
       {todayWorkout ? (
   <GymCard
     split={todayWorkout.split}
@@ -74,6 +81,7 @@ export default function Home() {
     <h2 className="text-2xl font-bold">(rest day)</h2>
   </div>
 )}
+
       {nextClass ? (
       <NextClassCard
          subject={nextClass.subject}
@@ -95,6 +103,9 @@ export default function Home() {
           total={totalMissions}
         />
 
+</div>
+<div className="mt-10">
+
       {missions.map((mission) => (
         <MissionCard
           key={mission.subject}
@@ -104,7 +115,10 @@ export default function Home() {
           completed={mission.completed}
           onComplete={completeMission}
         />
-      ))}
+      ))}  
+
+</div>   
     </main>
+    </div>
   );
 }
